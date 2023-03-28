@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CalendarListTableViewCell" rowHeight="90" id="XmN-43-MJf" customClass="CalendarListTableViewCell" customModule="Calendar_Exam" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XmN-43-MJf" id="lHR-Ro-SO7">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qfa-R6-Ffq">
+                        <rect key="frame" x="16" y="16" width="358" height="58"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZM-ko-UH8">
+                                <rect key="frame" x="0.0" y="0.0" width="358" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFG-4r-fWs">
+                                <rect key="frame" x="0.0" y="28.333333333333336" width="358" height="20.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxh-op-NDk">
+                                <rect key="frame" x="0.0" y="56.666666666666671" width="358" height="1.3333333333333357"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Qfa-R6-Ffq" secondAttribute="bottom" constant="16" id="6ZS-F3-3Jm"/>
+                    <constraint firstItem="Qfa-R6-Ffq" firstAttribute="leading" secondItem="lHR-Ro-SO7" secondAttribute="leading" constant="16" id="9yq-8c-mQZ"/>
+                    <constraint firstItem="Qfa-R6-Ffq" firstAttribute="top" secondItem="lHR-Ro-SO7" secondAttribute="top" constant="16" id="FJc-7v-K6k"/>
+                    <constraint firstAttribute="trailing" secondItem="Qfa-R6-Ffq" secondAttribute="trailing" constant="16" id="Sbx-QY-3SV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="endDateLabel" destination="yxh-op-NDk" id="egb-fK-dVs"/>
+                <outlet property="eventNameLabel" destination="gZM-ko-UH8" id="IpJ-uK-ctb"/>
+                <outlet property="startDateLabel" destination="cFG-4r-fWs" id="VAw-ap-xHO"/>
+            </connections>
+            <point key="canvasLocation" x="-55.38461538461538" y="-174.88151658767771"/>
+        </tableViewCell>
+    </objects>
+</document>
